@@ -1,0 +1,104 @@
+@import url("./nullstyle.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400&display=swap");
+
+body {
+  background: var(--black, #0e1014);
+  color: var(--light-text, #e4e5ea);
+  font-size: 16px;
+  line-height: normal;
+  font-style: normal;
+}
+
+a {
+  color: var(--light-text, #e4e5ea);
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 46px 10px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header__part1 {
+  flex: 0 1 61%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.header__logo {
+  flex: 0 1 20%;
+}
+
+.logo__icons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo__part1 {
+  max-width: 35px;
+  height: 24px;
+}
+
+.logo__part2 {
+  max-width: 97px;
+  height: 15px;
+}
+
+.logo__subtext {
+  color: #e4e5ea;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 72.5%;
+  padding-top: 3px;
+  gap: 10px;
+}
+
+.nav__item {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex: 0 1 27%;
+  padding-top: 3px;
+}
+
+.header__number {
+  text-align: right;
+  font-family: Inter;
+  font-weight: 500;
+  flex: 0 1 46.5%;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.header__apps {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 38%;
+  gap: 5px;
+}
+
+.header__app {
+  width: 20px;
+  height: 20px;
+}
