@@ -23,6 +23,10 @@
   font-family: Inter;
 }
 
+.mobile-show {
+  display: none;
+}
+
 body {
   background: var(--black, #0e1014);
   color: var(--light-text, #e4e5ea);
@@ -88,7 +92,8 @@ a {
 }
 
 .header__nav {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
   flex: 0 1 72.5%;
   padding-top: 3px;
@@ -135,11 +140,11 @@ a {
 
 .main__title {
   flex: 0 1 31%;
+  font-size: 48px;
 }
 
 .title__basis {
   font-family: Inter;
-  font-size: 48px;
   font-weight: 400;
 }
 
@@ -148,10 +153,9 @@ a {
   font-size: 18px;
   font-weight: 400;
   margin-top: 30px;
-  max-width: 275px;
 }
 
-.main-info {
+.main__info {
   flex: 0 1 26%;
   text-align: right;
   padding-top: 18px;
@@ -375,7 +379,7 @@ a {
   left: -20%;
 }
 
-/* @media (max-width: 850px) {
+@media (max-width: 850px) {
   .header__contacts {
     flex-direction: column;
   }
@@ -383,4 +387,107 @@ a {
   .header__apps {
     justify-content: center;
   }
-} */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px 60px;
+  }
+  .header {
+    display: block;
+    padding: 20px;
+  }
+
+  .header__part1 {
+    display: block;
+  }
+
+  .header__nav {
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__contacts {
+    display: none;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .footer__main {
+    display: block;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__contacts {
+    text-align: left;
+  }
+
+  .footer-contacts__apps {
+    justify-content: start;
+  }
+
+  .footer__info {
+    text-align-last: left;
+  }
+
+  .main__title {
+    text-align: center;
+  }
+
+  .main__info {
+    margin-top: 45px;
+    text-align: center;
+  }
+
+  .ball {
+    display: none;
+  }
+
+  .light {
+    display: none;
+  }
+}
+
+@media (max-width: 478px) {
+  .nav__item {
+    font-size: 12px;
+  }
+
+  .main__title {
+    font-size: 36px;
+  }
+
+  .gift__name {
+    font-size: 13px;
+    letter-spacing: 0.65px;
+  }
+
+  .gift__info {
+    display: none;
+  }
+
+  .main-info__button {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 47px;
+  }
+
+  .desktop-show {
+    display: none;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+}
