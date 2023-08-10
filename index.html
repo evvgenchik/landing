@@ -34,7 +34,7 @@
             <a href="#" class="nav__item">Виджеты</a>
             <a href="#" class="nav__item">Интеграции</a>
             <a href="#" class="nav__item">Кейсы</a>
-            <a href="#" class="nav__item">Сертификаты</a>
+            <a href="#" class="nav__item desktop-show">Сертификаты</a>
           </nav>
         </div>
 
@@ -80,7 +80,7 @@
           <div class="main-info__gifts">
             <ul class="gifts-list">
               <li class="gifts-list__item gift">
-                <p class="gift__name">Виджеты</p>
+                <p class="gift__name gift-vidget">Виджеты</p>
                 <p class="gift__info">30 готовых решений</p>
               </li>
               <li class="gifts-list__item gift">
@@ -92,7 +92,7 @@
                 <p class="gift__info">отдела продаж и CRM системы</p>
               </li>
               <li class="gifts-list__item gift">
-                <p class="gift__name">35 дней</p>
+                <p class="gift__name gift-armocrm">35 дней</p>
                 <p class="gift__info">использования CRM</p>
               </li>
             </ul>
@@ -118,7 +118,44 @@
             </nav>
             <nav class="footer-nav__menu footer-menu">
               <h3 class="footer-nav__title footer-title">Меню</h3>
-              <ul class="footer-nav__list footer-menu__list">
+              <div class="footer-menu__box">
+                <div class="footer-menu__column">
+                  <ul class="footer-nav__list footer-menu__list">
+                    <li class="footer-nav__item">
+                      <a href="#">Расчёт стоимости</a>
+                    </li>
+                    <li class="footer-nav__item"><a href="#">Услуги</a></li>
+                    <li class="footer-nav__item"><a href="#">Виджеты</a></li>
+                    <li class="footer-nav__item"><a href="#">Интеграции</a></li>
+                    <li class="footer-nav__item">
+                      <a href="#">Наши клиенты</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-menu__column">
+                  <ul class="footer-nav__list footer-menu__list">
+                    <li class="footer-nav__item"><a href="#">Кейсы</a></li>
+                    <li class="footer-nav__item desktop-show">
+                      <a class="desktop-show" href="#"
+                        >Благодарственные письма</a
+                      >
+                    </li>
+                    <li class="footer-nav__item mobile-show">
+                      <a class="mobile-show" href="#">Благодарность клиентов</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#">Сертификаты</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#">Блог на Youtube</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#">Вопрос / Ответ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <ul class="footer-nav__list footer-menu__list">
                 <li class="footer-nav__item">
                   <a href="#">Расчёт стоимости</a>
                 </li>
@@ -138,7 +175,7 @@
                 </li>
                 <li class="footer-nav__item"><a href="#">Наши клиенты</a></li>
                 <li class="footer-nav__item"><a href="#">Вопрос / Ответ</a></li>
-              </ul>
+              </ul>-->
             </nav>
           </section>
 
@@ -447,5 +484,7 @@
       <div class="red-light light"></div>
       <div class="purple-light light"></div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
