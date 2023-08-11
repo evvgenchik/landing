@@ -394,8 +394,12 @@ a {
 }
 
 @media (max-width: 768px) {
+}
+
+@media (max-width: 478px) {
   .container {
     padding: 0 15px 60px;
+    overflow: hidden;
   }
 
   .header {
@@ -408,10 +412,6 @@ a {
     display: block;
   }
 
-  .header__nav {
-    justify-content: space-between;
-  }
-
   .header__logo {
     display: none;
   }
@@ -420,14 +420,18 @@ a {
     display: none;
   }
 
+  .nav__item {
+    font-size: 12px;
+  }
+
   .main {
     margin-top: 0;
     display: block;
     padding: 40px 0 55px;
   }
 
-  .main__title {
-    text-align: justify;
+  .title__basis {
+    font-size: 36px;
   }
 
   .title__subtitle {
@@ -439,45 +443,6 @@ a {
     text-align: center;
     padding-top: 0;
     text-align: left;
-  }
-
-  .footer__main {
-    text-align: justify;
-  }
-
-  .footer-menu__box {
-    justify-content: start;
-  }
-
-  .footer__nav {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .footer__contacts {
-    text-align: left;
-  }
-
-  .footer-contacts__apps {
-    justify-content: start;
-  }
-
-  .footer__info {
-    text-align-last: left;
-  }
-}
-
-@media (max-width: 478px) {
-  .container {
-    overflow: hidden;
-  }
-
-  .nav__item {
-    font-size: 12px;
-  }
-
-  .title__basis {
-    font-size: 36px;
   }
 
   .main-info__emphasize {
@@ -531,6 +496,11 @@ a {
     padding: 44px 0 60px;
   }
 
+  .footer__nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+
   .footer-nav__title {
     margin-bottom: 20px;
     font-size: 12px;
@@ -555,12 +525,17 @@ a {
   }
 
   .footer__contacts {
+    text-align: left;
     margin-top: 30px;
     gap: 10px;
   }
 
   .footer-contacts__title {
     margin-bottom: 8px;
+  }
+
+  .footer-contacts__apps {
+    justify-content: start;
   }
 
   .footer__app {
@@ -573,6 +548,7 @@ a {
 
   .info-footer {
     margin-top: 50px;
+    text-align-last: left;
   }
 
   .desktop-show {
