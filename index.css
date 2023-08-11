@@ -386,6 +386,7 @@ a {
 @media (max-width: 850px) {
   .header__contacts {
     flex-direction: column;
+    text-align: right;
   }
 
   .header__apps {
@@ -394,9 +395,6 @@ a {
 }
 
 @media (max-width: 768px) {
-}
-
-@media (max-width: 478px) {
   .container {
     padding: 0 15px 60px;
     overflow: hidden;
@@ -445,6 +443,10 @@ a {
     text-align: left;
   }
 
+  .main-info__title {
+    max-width: 270px;
+  }
+
   .main-info__emphasize {
     font-size: 18px;
     text-transform: lowercase;
@@ -453,12 +455,13 @@ a {
 
   .main-info__gifts {
     margin-top: 20px;
+    padding: 0 16px 0;
   }
 
   .gifts-list {
     row-gap: 15px;
-    column-gap: 0px;
-    grid-template-columns: repeat(2, 124px);
+    column-gap: 5px;
+    grid-template-columns: repeat(2, 120px);
   }
 
   .gifts-list__item:nth-child(3) {
@@ -471,6 +474,7 @@ a {
     position: relative;
     font-family: Montserrat;
     white-space: nowrap;
+    text-align: left;
   }
 
   .gift__name::before {
@@ -480,7 +484,7 @@ a {
     background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
     position: absolute;
     top: 45%;
-    left: 5%;
+    left: -12%;
   }
 
   .gift__info {
@@ -512,6 +516,7 @@ a {
   }
 
   .footer-menu__box {
+    justify-content: left;
     gap: 47px;
   }
 
@@ -562,7 +567,7 @@ a {
 
   .purple-ball {
     top: 50%;
-    left: 92%;
+    left: 93%;
     filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
     backdrop-filter: blur(2px);
   }
