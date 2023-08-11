@@ -180,7 +180,7 @@ a {
 
 .gifts-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(130px, 1fr));
+  grid-template-columns: repeat(2, minmax(136px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
 }
@@ -334,7 +334,7 @@ a {
   );
 
   top: -54%;
-  left: 62%;
+  right: 33%;
 }
 
 .red-ball {
@@ -396,13 +396,13 @@ a {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 15px 60px;
+    padding: 0px;
     overflow: hidden;
   }
 
   .header {
     display: block;
-    padding: 17px 5px 20px 0px;
+    padding: 17px 15px 20px;
     text-transform: uppercase;
   }
 
@@ -425,7 +425,8 @@ a {
   .main {
     margin-top: 0;
     display: block;
-    padding: 40px 0 55px;
+    padding: 40px 15px 55px;
+    overflow: hidden;
   }
 
   .title__basis {
@@ -497,7 +498,7 @@ a {
 
   .footer {
     margin-top: 0;
-    padding: 44px 0 60px;
+    padding: 44px 15px 60px;
   }
 
   .footer__nav {
@@ -567,14 +568,14 @@ a {
 
   .purple-ball {
     top: 50%;
-    left: 93%;
+    right: 0;
     filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
     backdrop-filter: blur(2px);
   }
 
   .red-ball {
-    top: 90%;
-    left: 0%;
+    top: 88%;
+    left: 3%;
     filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
     backdrop-filter: blur(2px);
   }
