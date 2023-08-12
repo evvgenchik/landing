@@ -1,10 +1,17 @@
 @import url("./nullstyle.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400&display=swap");
 
+:root {
+  --gradient: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+  --black: #0e1014;
+  --light-text: #e4e5ea;
+  --hover-color: rgba(158, 159, 154, 1);
+  --dark-gray: #656566;
+}
+
 /* COMMON CLS */
 
 .number {
-  font-family: Inter;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -16,11 +23,10 @@
 
 .emphasize {
   font-weight: 900;
-  background: var(--gradient, linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%));
+  background: var(--gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Inter;
 }
 
 .mobile-show {
@@ -28,16 +34,21 @@
 }
 
 body {
-  background: var(--black, #0e1014);
-  color: var(--light-text, #e4e5ea);
+  background: var(--black);
+  color: var(--light-text);
   font-size: 16px;
   line-height: normal;
   font-style: normal;
   font-weight: 400;
+  font-family: Inter;
 }
 
 a {
-  color: var(--light-text, #e4e5ea);
+  color: var(--light-text);
+  &:hover {
+    transition: 0.5s ease;
+    color: var(--hover-color);
+  }
 }
 
 .container {
@@ -101,9 +112,9 @@ a {
 }
 
 .nav__item {
-  font-family: Inter;
-  font-size: 16px;
   font-weight: 500;
+  height: 100%;
+  display: inline;
 }
 
 .header__contacts {
@@ -146,13 +157,11 @@ a {
 .title__basis {
   font-size: 48px;
   font-weight: 400;
-  font-family: Inter;
 }
 
 .title__subtitle {
   font-family: Montserrat;
   font-size: 18px;
-  font-weight: 400;
   margin-top: 30px;
 }
 
@@ -163,7 +172,6 @@ a {
 }
 
 .main-info__title {
-  font-family: Inter;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
@@ -188,7 +196,6 @@ a {
 .gift__name {
   text-transform: uppercase;
   text-align: right;
-  font-family: Inter;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -197,8 +204,6 @@ a {
 
 .gift__info {
   font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
   margin-top: 7px;
   line-height: 1.2;
 }
@@ -210,14 +215,18 @@ a {
   margin-top: 61px;
   width: 100%;
   border: none;
+
+  &:hover {
+    transition: 0.5s ease;
+    background-color: rgba(64, 119, 243, 0.7);
+    cursor: pointer;
+  }
 }
 
 .main-button__text {
   text-align: center;
-  font-family: Inter;
-  font-size: 16px;
   font-weight: 500;
-  color: var(--light-text, #e4e5ea);
+  color: var(--light-text);
 }
 
 /* FOOTER */
@@ -244,8 +253,7 @@ a {
 }
 
 .footer-title {
-  color: var(--dark-gray, #656566);
-  font-family: Inter;
+  color: var(--dark-gray);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -261,9 +269,6 @@ a {
 }
 
 .footer-nav__item {
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
   white-space: nowrap;
 }
 
@@ -294,12 +299,6 @@ a {
   gap: 10px;
 }
 
-.footer-contacts__address {
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .footer__info {
   margin-top: 32px;
   padding-bottom: 20px;
@@ -309,7 +308,6 @@ a {
   text-align: right;
   font-family: Montserrat;
   font-size: 12px;
-  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -319,41 +317,27 @@ a {
 
 .ball {
   position: absolute;
-  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(1px);
+  z-index: -1;
 }
 
 .purple-ball {
-  flex-shrink: 0;
+  filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
   max-width: 60px;
-  fill: radial-gradient(
-    82.3% 82.3% at 27.25% 26.5%,
-    rgba(236, 208, 255, 0.64) 0%,
-    rgba(161, 93, 207, 0.24) 59.67%,
-    rgba(118, 49, 164, 0.21) 78.59%,
-    rgba(86, 24, 128, 0.23) 100%
-  );
-
-  top: -54%;
+  top: -210px;
   right: 33%;
 }
 
 .red-ball {
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
   max-width: 83px;
-  fill: radial-gradient(
-    82.3% 82.3% at 27.25% 26.5%,
-    rgba(255, 208, 208, 0.48) 0%,
-    rgba(212, 93, 93, 0.25) 59.67%,
-    rgba(167, 49, 49, 0.26) 78.59%,
-    rgba(130, 25, 25, 0.23) 100%
-  );
-
-  top: -35%;
+  top: -134px;
   left: 31%;
 }
 
 .red-ball-mini {
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
   max-width: 28px;
-  top: 85%;
+  top: 330px;
   left: 60%;
 }
 
@@ -362,6 +346,7 @@ a {
   opacity: 0.5;
   position: absolute;
   width: 100%;
+  z-index: -1;
 }
 
 .purple-light {
@@ -369,7 +354,7 @@ a {
   height: 259px;
   border-radius: 259px;
   background: #833ab4;
-  top: -95%;
+  top: -370px;
   left: 40%;
 }
 
@@ -378,8 +363,7 @@ a {
   height: 311px;
   border-radius: 311px;
   background: #961a1a;
-  filter: blur(196px);
-  top: 10%;
+  top: 45px;
   left: -21%;
 }
 
@@ -410,11 +394,8 @@ a {
     display: block;
   }
 
+  .header__contacts,
   .header__logo {
-    display: none;
-  }
-
-  .header__contacts {
     display: none;
   }
 
@@ -430,6 +411,7 @@ a {
   }
 
   .title__basis {
+    max-width: 400px;
     font-size: 36px;
   }
 
@@ -439,7 +421,6 @@ a {
 
   .main__info {
     margin-top: 45px;
-    text-align: center;
     padding-top: 0;
     text-align: left;
   }
@@ -488,10 +469,7 @@ a {
     left: -12%;
   }
 
-  .gift__info {
-    display: none;
-  }
-
+  .gift__info,
   .main-info__button {
     display: none;
   }
@@ -567,16 +545,15 @@ a {
   }
 
   .purple-ball {
-    top: 50%;
+    top: 200px;
     right: 0;
-    filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
     backdrop-filter: blur(2px);
   }
 
   .red-ball {
-    top: 88%;
+    top: 390px;
     left: 3%;
-    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(5px);
     backdrop-filter: blur(2px);
   }
 
@@ -585,15 +562,15 @@ a {
   }
 
   .red-light {
-    top: 55%;
-    left: -60%;
+    top: 250px;
+    left: -15%;
     width: 211px;
     height: 210px;
   }
 
   .purple-light {
+    top: 110px;
     left: 80%;
-    top: 25%;
     width: 259px;
     height: 259px;
   }

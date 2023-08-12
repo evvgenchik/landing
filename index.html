@@ -103,20 +103,28 @@
           </button>
         </section>
 
-        <div class="purple-ball ball">
+        <picture class="purple-ball ball">
+          <source
+            media="(max-width: 768px)"
+            srcset="./icons/purple-ball-mob.svg"
+          />
           <img
             class="purple-ball__img"
             src="./icons/purple-ball.svg"
             alt="purple ball"
           />
-        </div>
-        <div class="red-ball ball">
+        </picture>
+        <picture class="red-ball ball">
+          <source
+            media="(max-width: 768px)"
+            srcset="./icons/red-ball-mob.svg"
+          />
           <img
             class="red-ball__img"
             src="./icons/red-ball.svg"
-            alt="red ball"
+            alt="purple ball"
           />
-        </div>
+        </picture>
         <div class="red-ball red-ball-mini ball">
           <img
             class="red-ball-mini__img"
@@ -124,7 +132,6 @@
             alt="red ball"
           />
         </div>
-
         <div class="red-light light"></div>
         <div class="purple-light light"></div>
       </main>
